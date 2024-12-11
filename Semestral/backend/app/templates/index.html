@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Bienvenidos</h1>
+
+    <!-- Nueva frase destacada -->
+    <p><strong>Elija Su Auto Ideal Para Su Próximo Viaje</strong></p>
+    <p><em>Tenemos una amplia selección de vehículos que se adaptan a cualquier estilo de vida y necesidades de viaje.</em></p>
+
+    <!-- Sección de imágenes de presentación -->
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/imagen1.jpg') }}" alt="Imagen 1" class="presentacion-imagen">
+        <img src="{{ url_for('static', filename='images/imagen2.jpg') }}" alt="Imagen 2" class="presentacion-imagen">
+    </div>
+
+    <!-- Botón de rentar autos -->
+    <a href="{{ url_for('api.vehicles_page') }}">
+        <button>Rentar Autos</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,11 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"  # Esto mapea el puerto 5000 del contenedor al puerto 5000 de la máquina host
+      
+    volumes:
+      - ./backend:/app    # Volúmenes para desarrollo (sin reconstruir contenedor)
+      - ./backend/instance:/app/instance  # Volumen para persistir la base de datos SQLite
+    environment:
+      - FLASK_ENV=development  # Usar FLASK_ENV para el modo desarrollo

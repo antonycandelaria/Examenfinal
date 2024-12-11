@@ -1,0 +1,101 @@
+/* Establecer el estilo base para la página */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-image: url('fondo1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Fondo y estilo para el título principal */
+h1 {
+  color: #fae207;
+  margin-top: 30px;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.6); /* Fondo negro translúcido */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  display: inline-block; /* Se ajusta al tamaño del texto */
+}
+
+/* Fondo y estilo para frases destacadas */
+p.highlight {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.3); /* Fondo blanco translúcido */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  display: inline-block; /* Se ajusta al tamaño del texto */
+}
+
+/* Sección de imágenes de presentación */
+.image-container {
+  display: flex;
+  justify-content: space-around; /* Alinea las imágenes a los extremos */
+  width: 80%; /* Mantén el tamaño del contenedor del 80% del ancho de la página */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en dispositivos pequeños */
+}
+
+/* Estilo de las imágenes de presentación */
+.presentacion-imagen {
+  width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor disponible */
+  max-width: 400px; /* Limita el tamaño máximo de las imágenes */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+}
+
+/* Estilo mejorado para el botón de rentar autos */
+button {
+  background: linear-gradient(45deg, #0202027e, #0c0c0c75); /* Gradiente suave de verde */
+  color: #fcd603;
+  font-size: 1.3rem;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px; /* Bordes más redondeados */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 0;
+  width: auto; /* Se adapta al contenido del texto */
+  height: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-weight: bold;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+  background: linear-gradient(45deg, #388E3C, #7CB342); /* Cambio de gradiente más oscuro */
+  transform: translateY(-5px); /* Levantar el botón */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Efecto al hacer clic */
+button:active {
+  transform: translateY(2px); /* Botón se hunde un poco al hacer clic */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+}
